@@ -53,7 +53,7 @@ int main() {
 			// E obtém-se o respectivo mapa de nós
 			if (nodemap.m == NULL)
 				get_node_map(&map, &nodemap);
-			menu_id = game(&ev, &queue, &running, &map, &nodemap, font, width, height, &timer,, &menu_id);
+			menu_id = game(&ev, &queue, &running, &map, &nodemap, font, width, height, &timer, &menu_id);
 			break;
 		case 2: // Menu de escolha de mapas
 			menu_id = maps_menu(&ev, &queue, &running, font, width, height, &map);
